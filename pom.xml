@@ -13,6 +13,11 @@
         <module>ganji-zuul</module>
         <module>ganji-item</module>
         <module>ganji-common</module>
+        <module>ganji-user</module>
+        <module>ganji-user-service</module>
+        <module>ganji-sms</module>
+        <module>ganji-auth</module>
+        <module>ganji-auth-service</module>
     </modules>
 
 

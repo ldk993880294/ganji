@@ -3,6 +3,14 @@ server:
 spring:
   application:
     name: item-service
+  rabbitmq:
+    host: localhost
+    username: leyou
+    password: leyou
+    virtual-host: /leyou
+    template:
+      exchange: ganji.item.exchange
+    publisher-confirms: true
   datasource:
     username: root
     password: admin123

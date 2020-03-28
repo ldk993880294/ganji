@@ -6,16 +6,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Table(name="tb_category")
-public class Category {
+@Table(name="tb_brand")
+public class Brand {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private Long parentId;
-    private Boolean isParent;
-    private Integer sort;
+    private String image;
+    private Character letter;
 
     public Long getId() {
         return id;
@@ -33,27 +32,19 @@ public class Category {
         this.name = name;
     }
 
-    public Long getParentId() {
-        return parentId;
+    public String getImage() {
+        return image;
     }
 
-    public void setParentId(Long parentId) {
-        this.parentId = parentId;
+    public void setImage(String image) {
+        this.image = image;
     }
 
-    public Boolean getIsParent() {
-        return isParent;
+    public Character getLetter() {
+        return letter;
     }
 
-    public void setIsParent(Boolean isParent) {
-        isParent = isParent;
-    }
-
-    public Integer getSort() {
-        return sort;
-    }
-
-    public void setSort(Integer sort) {
-        this.sort = sort;
+    public void setLetter(Character letter) {
+        this.letter = letter;
     }
 }
